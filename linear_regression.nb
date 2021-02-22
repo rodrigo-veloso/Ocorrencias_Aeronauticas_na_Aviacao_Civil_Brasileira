@@ -1,0 +1,492 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17645,        484]
+NotebookOptionsPosition[     16330,        432]
+NotebookOutlinePosition[     16666,        447]
+CellTagsIndexPosition[     16623,        444]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8228645178225107`*^9, 3.822864537596053*^9}}],
+
+Cell[BoxData["\<\"/home/rodrigo/Downloads/cenipa_data\"\>"], "Output",
+ CellChangeTimes->{3.822864538530242*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", 
+  RowBox[{"anos", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"Import", "[", "\"\<anos.csv\>\"", "]"}], ",", "1"}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.822864539193468*^9, 3.822864605908709*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"2010", "365", "129", "636", "202", "398", "3", "19", "14", 
+      "0.6257861635220126`", "0.6633333333333333`", "552", "129", 
+      "0.23369565217391305`", "753.3013618430131`", "0.9036360542396733`", 
+      "610.8654003015155`", "0.2111758170234019`"},
+     {"2011", "366", "151", "666", "212", "413", "6", "20", "15", 
+      "0.6201201201201201`", "0.6608`", "576", "149", "0.2586805555555556`", 
+      "666.`", "0.9669233210710271`", "595.7039068640779`", 
+      "0.2501242618742761`"},
+     {"2012", "161", "140", "525", "153", "336", "6", "23", "7", "0.64`", 
+      "0.6871165644171779`", "647", "140", "0.21638330757341576`", 
+      "606.8639903724625`", "1.`", "647.`", "0.21638330757341576`"},
+     {"2013", "135", "141", "468", "141", "308", "2", "11", "6", 
+      "0.6581196581196581`", "0.6859688195991092`", "654", "140", 
+      "0.21406727828746178`", "560.3184597438709`", "0.9759250265768281`", 
+      "670.1334448753528`", "0.20891361425192037`"},
+     {"2014", "112", "145", "501", "148", "339", "0", "13", "1", 
+      "0.6766467065868264`", "0.6960985626283368`", "567", "144", 
+      "0.25396825396825395`", "501.73574614204847`", "0.9834200744915986`", 
+      "576.5593104179042`", "0.24975747923596153`"},
+     {"2015", "123", "109", "442", "155", "273", "3", "7", "4", 
+      "0.6176470588235294`", "0.6378504672897196`", "472", "109", 
+      "0.2309322033898305`", "500.09284172990647`", "0.9572887428969125`", 
+      "493.0591772881928`", "0.22106879867746496`"},
+     {"2016", "60", "48", "166", "54", "107", "1", "2", "2", 
+      "0.6445783132530121`", "0.6645962732919255`", "403", "47", 
+      "0.11662531017369727`", "406.6405494583635`", "0.8755085925370737`", 
+      "460.30387758065876`", "0.10210646116437336`"},
+     {"2017", "55", "46", "176", "75", "93", "0", "5", "3", 
+      "0.5284090909090909`", "0.5535714285714286`", "434", "46", 
+      "0.10599078341013825`", "483.2756387034306`", "0.8594200515475744`", 
+      "504.99170832526863`", "0.0910906045419088`"},
+     {"2018", "44", "25", "92", "32", "57", "1", "2", "0", 
+      "0.6195652173913043`", "0.6404494382022472`", "443", "25", 
+      "0.056433408577878104`", "459.7366817677078`", "0.8869481006171942`", 
+      "499.46552644031004`", "0.05005350454950306`"},
+     {"2019", "21", "15", "45", "14", "29", "0", "1", "1", 
+      "0.6444444444444445`", "0.6744186046511628`", "497", "15", 
+      "0.030181086519114688`", "429.81169950148103`", "0.8676712962608889`", 
+      "572.7975584092198`", "0.02618726246260228`"}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.822864567699594*^9, 3.82286460613661*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fatores", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"anos", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", ",", "1"}], "]"}], "]"}], ",", 
+      RowBox[{"anos", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", ",", "4"}], "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", 
+      RowBox[{"Length", "[", "anos", "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.822864715670293*^9, 3.8228647892566767`*^9}, {
+  3.82286485687169*^9, 3.8228648805982523`*^9}, {3.8228674010592327`*^9, 
+  3.822867409993228*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2010", ",", "636"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2011", ",", "666"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2012", ",", "525"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2013", ",", "468"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2014", ",", "501"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "442"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2016", ",", "166"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2017", ",", "176"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2018", ",", "92"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2019", ",", "45"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.822864881473639*^9, 3.822867410556231*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"corrigidos", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"anos", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", ",", "1"}], "]"}], "]"}], ",", 
+      RowBox[{"anos", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", ",", 
+         RowBox[{"-", "4"}]}], "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", 
+      RowBox[{"Length", "[", "anos", "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8228648825381193`*^9, 3.822864892470406*^9}, {
+  3.822865425102187*^9, 3.8228654251699057`*^9}, {3.822867427858365*^9, 
+  3.82286743928019*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2010", ",", "753.3013618430131`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2011", ",", "666.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2012", ",", "606.8639903724625`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2013", ",", "560.3184597438709`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2014", ",", "501.73574614204847`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "500.09284172990647`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2016", ",", "406.6405494583635`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2017", ",", "483.2756387034306`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2018", ",", "459.7366817677078`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2019", ",", "429.81169950148103`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.822864893181069*^9, 3.8228654258463917`*^9, 
+  3.822867443924305*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmOcorroencias", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"fatores", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "x"}], "}"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.822864894014864*^9, 3.8228649416291323`*^9}, {
+   3.822865108065154*^9, 3.822865207905437*^9}, {3.8228652595070553`*^9, 
+   3.822865260023946*^9}, {3.822866351462846*^9, 3.8228663871979923`*^9}, {
+   3.822866499325759*^9, 3.82286651833426*^9}, {3.822866557501596*^9, 
+   3.8228665643722363`*^9}, {3.822867454666067*^9, 3.8228674684872828`*^9}, 
+   3.82286763429844*^9}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"147454.61818181843`", "\[VeryThinSpace]", "-", 
+       RowBox[{"73.01212121212134`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {
+     147454.61818181843`, -73.01212121212134}, {{$CellContext`x}, {
+      1, $CellContext`x}}, {0, 0}}, {{1., 1., 1., 1., 1., 1., 1., 1., 1., 
+    1.}}, {{2010, 636}, {2011, 666}, {2012, 525}, {2013, 468}, {2014, 501}, {
+    2015, 442}, {2016, 166}, {2017, 176}, {2018, 92}, {2019, 45}}, {{1., 
+    2010.}, {1., 2011.}, {1., 2012.}, {1., 2013.}, {1., 2014.}, {1., 2015.}, {
+    1., 2016.}, {1., 2017.}, {1., 2018.}, {1., 2019.}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{{3.822865190560252*^9, 3.822865208344936*^9}, 
+   3.822865260782115*^9, 3.822865428993907*^9, 3.8228663564213057`*^9, 
+   3.822866388163692*^9, {3.8228665029838142`*^9, 3.822866518734931*^9}, 
+   3.82286656503478*^9, {3.8228674552723827`*^9, 3.8228674689068003`*^9}, 
+   3.8228676369053297`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmOcorroencias", "[", "\"\<ParameterTable\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8228652001659822`*^9, 3.822865232337406*^9}, 
+   3.822866571438352*^9, 3.822867635449601*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  TagBox[GridBox[{
+     {"\<\"\"\>", "\<\"Estimate\"\>", "\<\"Standard Error\"\>", "\<\"t\
+\[Hyphen]Statistic\"\>", "\<\"P\[Hyphen]Value\"\>"},
+     {"1", "147454.61818181843`", "15019.90418235314`", "9.817280882195147`", 
+      "9.7394430497614`*^-6"},
+     {"x", 
+      RowBox[{"-", "73.01212121212134`"}], "7.455889260499217`", 
+      RowBox[{"-", "9.792543674023499`"}], "9.924139148319764`*^-6"}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+    GridBoxDividers->{
+     "ColumnsIndexed" -> {2 -> GrayLevel[0.7]}, 
+      "RowsIndexed" -> {2 -> GrayLevel[0.7]}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+    GridBoxSpacings->{
+     "ColumnsIndexed" -> {2 -> 1}, "RowsIndexed" -> {2 -> 0.75}}],
+   "Grid"], "DialogStyle",
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{
+  3.822865232779653*^9, 3.822865265109222*^9, 3.822865429952464*^9, 
+   3.822866357771813*^9, 3.8228663893470383`*^9, {3.822866503838056*^9, 
+   3.822866519726741*^9}, 3.8228665722168427`*^9, {3.822867456847763*^9, 
+   3.822867469961815*^9}, 3.822867637596189*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmCorrigidos1", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"corrigidos", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "x", ",", 
+      RowBox[{"x", "^", "2"}]}], "}"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.822867624045302*^9, 3.822867720209621*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"2.0847061227442257`*^7", "-", 
+       RowBox[{"20663.572288208787`", " ", "x"}], "+", 
+       RowBox[{"5.12053304297225`", " ", 
+        SuperscriptBox["x", "2"]}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {2.0847061227442257`*^7, -20663.572288208787`, 
+     5.12053304297225}, {{$CellContext`x}, {
+      1, $CellContext`x, $CellContext`x^2}}, {0, 0}}, {{1., 1., 1., 1., 1., 
+    1., 1., 1., 1., 
+    1.}}, {{2010, 753.3013618430131}, {2011, 666.}, {
+     2012, 606.8639903724625}, {2013, 560.3184597438709}, {
+     2014, 501.73574614204847`}, {2015, 500.09284172990647`}, {
+     2016, 406.6405494583635}, {2017, 483.2756387034306}, {
+     2018, 459.7366817677078}, {2019, 429.81169950148103`}}, {{1., 2010., 
+    4.0401*^6}, {1., 2011., 4.044121*^6}, {1., 2012., 4.048144*^6}, {1., 
+    2013., 4.052169*^6}, {1., 2014., 4.056196*^6}, {1., 2015., 4.060225*^6}, {
+    1., 2016., 4.064256*^6}, {1., 2017., 4.068289*^6}, {1., 2018., 
+    4.072324*^6}, {1., 2019., 4.076361*^6}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{{3.822867656447785*^9, 3.822867722881317*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmCorrigidos1", "[", "\"\<ParameterTable\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8228665951688232`*^9, 3.822866599601843*^9}, 
+   3.822867665019382*^9, 3.822867721382667*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  TagBox[GridBox[{
+     {"\<\"\"\>", "\<\"Estimate\"\>", "\<\"Standard Error\"\>", "\<\"t\
+\[Hyphen]Statistic\"\>", "\<\"P\[Hyphen]Value\"\>"},
+     {"1", "2.0847061227442257`*^7", "4.910087623061892`*^6", 
+      "4.245761548027567`", "0.0038130486120605666`"},
+     {"x", 
+      RowBox[{"-", "20663.572288208787`"}], "4874.752743665085`", 
+      RowBox[{"-", "4.238896488660237`"}], "0.003845553072732194`"},
+     {
+      SuperscriptBox["x", "2"], "5.12053304297225`", "1.2099160542813343`", 
+      "4.232139101595559`", "0.0038778450753223265`"}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+    GridBoxDividers->{
+     "ColumnsIndexed" -> {2 -> GrayLevel[0.7]}, 
+      "RowsIndexed" -> {2 -> GrayLevel[0.7]}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+    GridBoxSpacings->{
+     "ColumnsIndexed" -> {2 -> 1}, "RowsIndexed" -> {2 -> 0.75}}],
+   "Grid"], "DialogStyle",
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{
+  3.822866600164536*^9, {3.822867588768794*^9, 3.822867597050292*^9}, {
+   3.822867665563878*^9, 3.822867723679118*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmCorrigidos2", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"corrigidos", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "x"}], "}"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.822867715172202*^9, 3.822867744097083*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"66903.79138826445`", "\[VeryThinSpace]", "-", 
+       RowBox[{"32.94465807462806`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {
+     66903.79138826445, -32.94465807462806}, {{$CellContext`x}, {
+      1, $CellContext`x}}, {0, 0}}, {{1., 1., 1., 1., 1., 1., 1., 1., 1., 
+    1.}}, {{2010, 753.3013618430131}, {2011, 666.}, {
+     2012, 606.8639903724625}, {2013, 560.3184597438709}, {
+     2014, 501.73574614204847`}, {2015, 500.09284172990647`}, {
+     2016, 406.6405494583635}, {2017, 483.2756387034306}, {
+     2018, 459.7366817677078}, {2019, 429.81169950148103`}}, {{1., 2010.}, {
+    1., 2011.}, {1., 2012.}, {1., 2013.}, {1., 2014.}, {1., 2015.}, {1., 
+    2016.}, {1., 2017.}, {1., 2018.}, {1., 2019.}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{{3.822867726562682*^9, 3.82286774452887*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lmCorrigidos2", "[", "\"\<ParameterTable\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.822867734928615*^9, 3.822867741617361*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  TagBox[GridBox[{
+     {"\<\"\"\>", "\<\"Estimate\"\>", "\<\"Standard Error\"\>", "\<\"t\
+\[Hyphen]Statistic\"\>", "\<\"P\[Hyphen]Value\"\>"},
+     {"1", "66903.79138826445`", "10880.867929423493`", "6.1487550278362075`",
+       "0.0002743701276621289`"},
+     {"x", 
+      RowBox[{"-", "32.94465807462806`"}], "5.401269232810048`", 
+      RowBox[{"-", "6.099428977638349`"}], "0.00028965317312900024`"}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+    GridBoxDividers->{
+     "ColumnsIndexed" -> {2 -> GrayLevel[0.7]}, 
+      "RowsIndexed" -> {2 -> GrayLevel[0.7]}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+    GridBoxSpacings->{
+     "ColumnsIndexed" -> {2 -> 1}, "RowsIndexed" -> {2 -> 0.75}}],
+   "Grid"], "DialogStyle",
+  StripOnInput->False]], "Output",
+ CellChangeTimes->{3.822867745210112*^9}]
+}, Open  ]]
+},
+WindowSize->{816, 704},
+WindowMargins->{{130, Automatic}, {-76, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 172, 3, 35, "Input"],
+Cell[755, 27, 112, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[904, 33, 266, 7, 32, "Input"],
+Cell[1173, 42, 3140, 55, 216, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4350, 102, 616, 17, 35, "Input"],
+Cell[4969, 121, 755, 23, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5761, 149, 642, 18, 35, "Input"],
+Cell[6406, 169, 924, 24, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7367, 198, 586, 11, 32, "Input"],
+Cell[7956, 211, 1246, 29, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9239, 245, 204, 3, 32, "Input"],
+Cell[9446, 250, 1159, 25, 75, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10642, 280, 299, 7, 35, "Input"],
+Cell[10944, 289, 1403, 33, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12384, 327, 203, 3, 32, "Input"],
+Cell[12590, 332, 1162, 26, 91, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13789, 363, 262, 6, 35, "Input"],
+Cell[14054, 371, 1147, 28, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15238, 404, 153, 2, 32, "Input"],
+Cell[15394, 408, 920, 21, 65, "Output"]
+}, Open  ]]
+}
+]
+*)
+
